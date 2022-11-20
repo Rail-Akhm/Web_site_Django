@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ Главная }}</h1>
+        <p>Приветствую Вас на моем сайте. Данная страница является тренажером для меня в процессе изучения Python, в частности Django фреймворка и веб-разработки в целом</p>
+        <a href="{% url 'about' %}"><button class="btn-warning">На страницу про меня</button></a>
+    </div>
+{% endblock %}
+
